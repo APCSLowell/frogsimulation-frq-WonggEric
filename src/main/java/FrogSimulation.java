@@ -16,13 +16,25 @@ public class FrogSimulation
 	public boolean simulate()
 	{ 
 		/* to be implemented in part (a) */
+		if(sim.hopdistance()>=sim.goaldistance())
+			return true;
+		return false;
 
 	}
 	
 	public double runSimulations(int num)
 	{ 
 		/* to be implemented in part (b) */ 
-
+		int countReach = 0;
+		int countNot = 0;
+		for(int i = 0;i<num;i++){
+		    if(simulation()==true){
+			countReach++;
+		    }else{
+			countNot++;
+		    }
+		}
+		return (double)countReach/countNot;
 	}
 	
 	
