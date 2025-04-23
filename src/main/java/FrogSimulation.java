@@ -16,7 +16,7 @@ public class FrogSimulation
 	public boolean simulate()
 	{ 
 		/* to be implemented in part (a) */
-		if(this.hopdistance()>=this.goaldistance())
+		if(hopdistance()>=goaldistance())
 			return true;
 		return false;
 
@@ -28,7 +28,7 @@ public class FrogSimulation
 		int countReach = 0;
 		int countNot = 0;
 		for(int i = 0;i<num;i++){
-		    if(this.simulation()==true){
+		    if(simulation()==true){
 			countReach++;
 		    }else{
 			countNot++;
