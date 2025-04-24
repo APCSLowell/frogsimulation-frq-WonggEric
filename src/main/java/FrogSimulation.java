@@ -31,7 +31,7 @@ public class FrogSimulation
 		/* to be implemented in part (b) */ 
 		int runs = 0;
 		for(int run = 1;run<=num;run++){
-			if(stimulate()){
+			if(simulate()){
 				runs++;
 			}
 		}
